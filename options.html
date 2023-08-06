@@ -4402,11 +4402,6 @@ boolean</p><p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">false</code></p><p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">true</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/gh.nix" target="_top">
 &lt;home-manager/modules/programs/gh.nix&gt;
-</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.gh.enableGitCredentialHelper"></a><a class="term" href="options.html#opt-programs.gh.enableGitCredentialHelper"><code class="option">programs.gh.enableGitCredentialHelper</code></a></span></dt><dd><p>Whether to enable the gh git credential helper for github.com.</p><p><span class="emphasis"><em>Type:</em></span>
-boolean</p><p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p><p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/gh.nix" target="_top">
-&lt;home-manager/modules/programs/gh.nix&gt;
 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.gh.package"></a><a class="term" href="options.html#opt-programs.gh.package"><code class="option">programs.gh.package</code></a></span></dt><dd><p>Package providing <span class="command"><strong>gh</strong></span>.</p><p><span class="emphasis"><em>Type:</em></span>
 package</p><p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">pkgs.gh</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/gh.nix" target="_top">
@@ -4415,6 +4410,19 @@ package</p><p><span class="emphasis"><em>Default:</em></span>
 list of package</p><p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">[ ]</code></p><p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">[ pkgs.gh-eco ]</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/gh.nix" target="_top">
+&lt;home-manager/modules/programs/gh.nix&gt;
+</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.gh.gitCredentialHelper.enable"></a><a class="term" href="options.html#opt-programs.gh.gitCredentialHelper.enable"><code class="option">programs.gh.gitCredentialHelper.enable</code></a></span></dt><dd><p>Whether to enable the gh git credential helper.</p><p><span class="emphasis"><em>Type:</em></span>
+boolean</p><p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p><p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/gh.nix" target="_top">
+&lt;home-manager/modules/programs/gh.nix&gt;
+</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.gh.gitCredentialHelper.hosts"></a><a class="term" href="options.html#opt-programs.gh.gitCredentialHelper.hosts"><code class="option">programs.gh.gitCredentialHelper.hosts</code></a></span></dt><dd><p>GitHub hosts to enable the gh git credential helper for</p><p><span class="emphasis"><em>Type:</em></span>
+list of string</p><p><span class="emphasis"><em>Default:</em></span></p><pre class="programlisting">[
+  "https://github.com"
+]
+</pre><p><span class="emphasis"><em>Example:</em></span></p><pre class="programlisting">[ "https://github.com" "https://github.example.com" ]
+
+</pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/gh.nix" target="_top">
 &lt;home-manager/modules/programs/gh.nix&gt;
 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.gh.settings"></a><a class="term" href="options.html#opt-programs.gh.settings"><code class="option">programs.gh.settings</code></a></span></dt><dd><p>Configuration written to <code class="filename">$XDG_CONFIG_HOME/gh/config.yml</code>.</p><p><span class="emphasis"><em>Type:</em></span>
 YAML value</p><p><span class="emphasis"><em>Default:</em></span>
@@ -7802,7 +7810,7 @@ strings concatenated with “\n”</p><p><span class="emphasis"><em>Default:</em
 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.nushell.envFile"></a><a class="term" href="options.html#opt-programs.nushell.envFile"><code class="option">programs.nushell.envFile</code></a></span></dt><dd><p>The environment variables file to be used for nushell.</p><p>See <a class="link" href="https://www.nushell.sh/book/configuration.html#configuration" target="_top">https://www.nushell.sh/book/configuration.html#configuration</a> for more information.</p><p><span class="emphasis"><em>Type:</em></span>
 null or (submodule)</p><p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">null</code></p><p><span class="emphasis"><em>Example:</em></span></p><pre class="programlisting">''
-  let-env FOO = 'BAR'
+  $env.FOO = 'BAR'
 ''
 </pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/nushell.nix" target="_top">
 &lt;home-manager/modules/programs/nushell.nix&gt;
@@ -11134,6 +11142,12 @@ boolean</p><p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">false</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/zsh.nix" target="_top">
 &lt;home-manager/modules/programs/zsh.nix&gt;
 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.zsh.history.extended"></a><a class="term" href="options.html#opt-programs.zsh.history.extended"><code class="option">programs.zsh.history.extended</code></a></span></dt><dd><p>Save timestamp into the history file.</p><p><span class="emphasis"><em>Type:</em></span>
+boolean</p><p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/zsh.nix" target="_top">
+&lt;home-manager/modules/programs/zsh.nix&gt;
+</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.zsh.history.ignoreAllDups"></a><a class="term" href="options.html#opt-programs.zsh.history.ignoreAllDups"><code class="option">programs.zsh.history.ignoreAllDups</code></a></span></dt><dd><p>If a new command line being added to the history list
+duplicates an older one, the older command is removed
+from the list (even if it is not the previous event).</p><p><span class="emphasis"><em>Type:</em></span>
 boolean</p><p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">false</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/zsh.nix" target="_top">
 &lt;home-manager/modules/programs/zsh.nix&gt;
