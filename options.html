@@ -3543,11 +3543,12 @@ boolean</p><p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">true</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/browserpass.nix" target="_top">
 &lt;home-manager/modules/programs/browserpass.nix&gt;
 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.browserpass.browsers"></a><a class="term" href="options.html#opt-programs.browserpass.browsers"><code class="option">programs.browserpass.browsers</code></a></span></dt><dd><p>Which browsers to install browserpass for</p><p><span class="emphasis"><em>Type:</em></span>
-list of (one of “brave”, “chrome”, “chromium”, “firefox”, “vivaldi”)</p><p><span class="emphasis"><em>Default:</em></span></p><pre class="programlisting">[
+list of (one of “brave”, “chrome”, “chromium”, “firefox”, “librewolf”, “vivaldi”)</p><p><span class="emphasis"><em>Default:</em></span></p><pre class="programlisting">[
   "brave"
   "chrome"
   "chromium"
   "firefox"
+  "librewolf"
   "vivaldi"
 ]
 </pre><p><span class="emphasis"><em>Example:</em></span></p><pre class="programlisting">[
@@ -8320,6 +8321,32 @@ attribute set of (boolean or signed integer or string or list of string)</p><p><
 
 </pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/powerline-go.nix" target="_top">
 &lt;home-manager/modules/programs/powerline-go.nix&gt;
+</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.pqiv.enable"></a><a class="term" href="options.html#opt-programs.pqiv.enable"><code class="option">programs.pqiv.enable</code></a></span></dt><dd><p>Whether to enable pqiv image viewer.</p><p><span class="emphasis"><em>Type:</em></span>
+boolean</p><p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p><p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/pqiv.nix" target="_top">
+&lt;home-manager/modules/programs/pqiv.nix&gt;
+</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.pqiv.package"></a><a class="term" href="options.html#opt-programs.pqiv.package"><code class="option">programs.pqiv.package</code></a></span></dt><dd><p>The pqiv package to install.</p><p><span class="emphasis"><em>Type:</em></span>
+package</p><p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.pqiv</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/pqiv.nix" target="_top">
+&lt;home-manager/modules/programs/pqiv.nix&gt;
+</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.pqiv.settings"></a><a class="term" href="options.html#opt-programs.pqiv.settings"><code class="option">programs.pqiv.settings</code></a></span></dt><dd><p>Configuration written to
+&lt;filename&gt;$XDG_CONFIG_HOME/pqivrc&lt;/filename&gt;. See &lt;link
+xlink:href=“https://github.com/phillipberndt/pqiv/blob/master/pqiv.1”/&gt;
+for a list of available options. To set a boolean flag, set the value to 1.</p><p><span class="emphasis"><em>Type:</em></span>
+attribute set of attribute set of (INI atom (null, bool, int, float or string))</p><p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p><p><span class="emphasis"><em>Example:</em></span></p><pre class="programlisting">{
+  options = {
+    lazy-load = 1;
+    hide-info-box = 1;
+    background-pattern = "black";
+    thumbnail-size = "256x256";
+    command-1 = "thunar";
+  };
+};
+
+</pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/pqiv.nix" target="_top">
+&lt;home-manager/modules/programs/pqiv.nix&gt;
 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.pubs.enable"></a><a class="term" href="options.html#opt-programs.pubs.enable"><code class="option">programs.pubs.enable</code></a></span></dt><dd><p>Whether to enable pubs.</p><p><span class="emphasis"><em>Type:</em></span>
 boolean</p><p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">false</code></p><p><span class="emphasis"><em>Example:</em></span>
@@ -15553,12 +15580,6 @@ boolean</p><p><span class="emphasis"><em>Default:</em></span>
 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-wayland.windowManager.hyprland.xwayland.enable"></a><a class="term" href="options.html#opt-wayland.windowManager.hyprland.xwayland.enable"><code class="option">wayland.windowManager.hyprland.xwayland.enable</code></a></span></dt><dd><p>Whether to enable XWayland.</p><p><span class="emphasis"><em>Type:</em></span>
 boolean</p><p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">true</code></p><p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/services/window-managers/hyprland.nix" target="_top">
-&lt;home-manager/modules/services/window-managers/hyprland.nix&gt;
-</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-wayland.windowManager.hyprland.xwayland.hidpi"></a><a class="term" href="options.html#opt-wayland.windowManager.hyprland.xwayland.hidpi"><code class="option">wayland.windowManager.hyprland.xwayland.hidpi</code></a></span></dt><dd><p>Enable HiDPI XWayland, based on <a class="link" href="https://gitlab.freedesktop.org/xorg/xserver/-/merge_requests/733" target="_top">XWayland MR 733</a>.
-See <a class="link" href="https://wiki.hyprland.org/Nix/Options-Overrides/#xwayland-hidpi" target="_top">https://wiki.hyprland.org/Nix/Options-Overrides/#xwayland-hidpi</a> for more info.</p><p><span class="emphasis"><em>Type:</em></span>
-boolean</p><p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">false</code></p><p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">true</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/services/window-managers/hyprland.nix" target="_top">
 &lt;home-manager/modules/services/window-managers/hyprland.nix&gt;
 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-wayland.windowManager.sway.enable"></a><a class="term" href="options.html#opt-wayland.windowManager.sway.enable"><code class="option">wayland.windowManager.sway.enable</code></a></span></dt><dd><p>Whether to enable sway wayland compositor.</p><p><span class="emphasis"><em>Type:</em></span>
