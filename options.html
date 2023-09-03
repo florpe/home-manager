@@ -3605,6 +3605,14 @@ list of string</p><p><span class="emphasis"><em>Default:</em></span>
 ]
 </pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/chromium.nix" target="_top">
 &lt;home-manager/modules/programs/chromium.nix&gt;
+</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.chromium.dictionaries"></a><a class="term" href="options.html#opt-programs.chromium.dictionaries"><code class="option">programs.chromium.dictionaries</code></a></span></dt><dd><p>List of Chromium dictionaries to install.</p><p><span class="emphasis"><em>Type:</em></span>
+list of package</p><p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p><p><span class="emphasis"><em>Example:</em></span></p><pre class="programlisting">[
+  pkgs.hunspellDictsChromium.en_US
+]
+
+</pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/chromium.nix" target="_top">
+&lt;home-manager/modules/programs/chromium.nix&gt;
 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.chromium.extensions"></a><a class="term" href="options.html#opt-programs.chromium.extensions"><code class="option">programs.chromium.extensions</code></a></span></dt><dd><p>List of Chromium extensions to install.
 To find the extension ID, check its URL on the
 <a class="link" href="https://chrome.google.com/webstore/category/extensions" target="_top">Chrome Web Store</a>.</p><p>To install extensions outside of the Chrome Web Store set
@@ -6381,6 +6389,20 @@ As those are ISO week numbers, they only work properly if
 <code class="option">firstweekday</code> is set to 0.</p><p><span class="emphasis"><em>Type:</em></span>
 one of “off”, “left”, “right”</p><p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">"off"</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/khal.nix" target="_top">
+&lt;home-manager/modules/programs/khal.nix&gt;
+</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.khal.settings"></a><a class="term" href="options.html#opt-programs.khal.settings"><code class="option">programs.khal.settings</code></a></span></dt><dd><p>Configuration options to add to the various sections in the configuration file.</p><p><span class="emphasis"><em>Type:</em></span>
+attribute set of attribute set of (INI atom (null, bool, int, float or string))</p><p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p><p><span class="emphasis"><em>Example:</em></span></p><pre class="programlisting">{
+  default = {
+    default_calendar = "Calendar";
+    timedelta = "5d";
+  };
+  view = {
+    agenda_event_format =
+      "{calendar-color}{cancelled}{start-end-time-style} {title}{repeat-symbol}{reset}";
+  };
+}
+</pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/khal.nix" target="_top">
 &lt;home-manager/modules/programs/khal.nix&gt;
 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.kitty.enable"></a><a class="term" href="options.html#opt-programs.kitty.enable"><code class="option">programs.kitty.enable</code></a></span></dt><dd><p>Whether to enable Kitty terminal emulator.</p><p><span class="emphasis"><em>Type:</em></span>
 boolean</p><p><span class="emphasis"><em>Default:</em></span>
@@ -10933,6 +10955,80 @@ strings concatenated with “\n”</p><p><span class="emphasis"><em>Default:</em
 
 </pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/xmobar.nix" target="_top">
 &lt;home-manager/modules/programs/xmobar.nix&gt;
+</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.yazi.enable"></a><a class="term" href="options.html#opt-programs.yazi.enable"><code class="option">programs.yazi.enable</code></a></span></dt><dd><p>Whether to enable yazi.</p><p><span class="emphasis"><em>Type:</em></span>
+boolean</p><p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p><p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/yazi.nix" target="_top">
+&lt;home-manager/modules/programs/yazi.nix&gt;
+</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.yazi.enableBashIntegration"></a><a class="term" href="options.html#opt-programs.yazi.enableBashIntegration"><code class="option">programs.yazi.enableBashIntegration</code></a></span></dt><dd><p>Whether to enable Bash integration.</p><p><span class="emphasis"><em>Type:</em></span>
+boolean</p><p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p><p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/yazi.nix" target="_top">
+&lt;home-manager/modules/programs/yazi.nix&gt;
+</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.yazi.enableZshIntegration"></a><a class="term" href="options.html#opt-programs.yazi.enableZshIntegration"><code class="option">programs.yazi.enableZshIntegration</code></a></span></dt><dd><p>Whether to enable Zsh integration.</p><p><span class="emphasis"><em>Type:</em></span>
+boolean</p><p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p><p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/yazi.nix" target="_top">
+&lt;home-manager/modules/programs/yazi.nix&gt;
+</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.yazi.package"></a><a class="term" href="options.html#opt-programs.yazi.package"><code class="option">programs.yazi.package</code></a></span></dt><dd><p>Yazi package to install.</p><p><span class="emphasis"><em>Type:</em></span>
+package</p><p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.yazi</code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/yazi.nix" target="_top">
+&lt;home-manager/modules/programs/yazi.nix&gt;
+</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.yazi.keymap"></a><a class="term" href="options.html#opt-programs.yazi.keymap"><code class="option">programs.yazi.keymap</code></a></span></dt><dd><p>Configuration written to
+<code class="filename">$XDG_CONFIG_HOME/yazi/keymap.toml</code>.</p><p>See <a class="link" href="https://github.com/sxyazi/yazi/blob/main/config/docs/keymap.md" target="_top">https://github.com/sxyazi/yazi/blob/main/config/docs/keymap.md</a>
+for the full list of options.</p><p><span class="emphasis"><em>Type:</em></span>
+TOML value</p><p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p><p><span class="emphasis"><em>Example:</em></span></p><pre class="programlisting">{
+  input.keymap = [
+    { exec = "close"; on = [ "&lt;C-q&gt;" ]; }
+    { exec = "close --submit"; on = [ "&lt;Enter&gt;" ]; }
+    { exec = "escape"; on = [ "&lt;Esc&gt;" ]; }
+    { exec = "backspace"; on = [ "&lt;Backspace&gt;" ]; }
+  ];
+  manager.keymap = [
+    { exec = "escape"; on = [ "&lt;Esc&gt;" ]; }
+    { exec = "quit"; on = [ "q" ]; }
+    { exec = "close"; on = [ "&lt;C-q&gt;" ]; }
+  ];
+}
+
+</pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/yazi.nix" target="_top">
+&lt;home-manager/modules/programs/yazi.nix&gt;
+</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.yazi.settings"></a><a class="term" href="options.html#opt-programs.yazi.settings"><code class="option">programs.yazi.settings</code></a></span></dt><dd><p>Configuration written to
+<code class="filename">$XDG_CONFIG_HOME/yazi/yazi.toml</code>.</p><p>See <a class="link" href="https://github.com/sxyazi/yazi/blob/main/config/docs/yazi.md" target="_top">https://github.com/sxyazi/yazi/blob/main/config/docs/yazi.md</a>
+for the full list of options.</p><p><span class="emphasis"><em>Type:</em></span>
+TOML value</p><p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p><p><span class="emphasis"><em>Example:</em></span></p><pre class="programlisting">{
+  log = {
+    enabled = false;
+  };
+  manager = {
+    show_hidden = false;
+    sort_by = "modified";
+    sort_dir_first = true;
+    sort_reverse = true;
+  };
+}
+
+</pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/yazi.nix" target="_top">
+&lt;home-manager/modules/programs/yazi.nix&gt;
+</a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.yazi.theme"></a><a class="term" href="options.html#opt-programs.yazi.theme"><code class="option">programs.yazi.theme</code></a></span></dt><dd><p>Configuration written to
+<code class="filename">$XDG_CONFIG_HOME/yazi/theme.toml</code>.</p><p>See <a class="link" href="https://github.com/sxyazi/yazi/blob/main/config/docs/theme.md" target="_top">https://github.com/sxyazi/yazi/blob/main/config/docs/theme.md</a>
+for the full list of options</p><p><span class="emphasis"><em>Type:</em></span>
+TOML value</p><p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p><p><span class="emphasis"><em>Example:</em></span></p><pre class="programlisting">{
+  filetype = {
+    rules = [
+      { fg = "#7AD9E5"; mime = "image/*"; }
+      { fg = "#F3D398"; mime = "video/*"; }
+      { fg = "#F3D398"; mime = "audio/*"; }
+      { fg = "#CD9EFC"; mime = "application/x-bzip"; }
+    ];
+  };
+}
+
+</pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/yazi.nix" target="_top">
+&lt;home-manager/modules/programs/yazi.nix&gt;
 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.yt-dlp.enable"></a><a class="term" href="options.html#opt-programs.yt-dlp.enable"><code class="option">programs.yt-dlp.enable</code></a></span></dt><dd><p>Whether to enable yt-dlp.</p><p><span class="emphasis"><em>Type:</em></span>
 boolean</p><p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">false</code></p><p><span class="emphasis"><em>Example:</em></span>
