@@ -128,15 +128,41 @@ boolean</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-accounts.calendar.accounts._name_.khal.addresses"></a><a class="term" href="options.xhtml#opt-accounts.calendar.accounts._name_.khal.addresses"><code class="option">accounts.calendar.accounts.&lt;name&gt;.khal.addresses</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Email addresses to be associated with this account. Used to check the
+participation status (“PARTSTAT”), refer to khal documentation.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/accounts/calendar.nix" target="_top">
+&lt;home-manager/modules/accounts/calendar.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-accounts.calendar.accounts._name_.khal.color"></a><a class="term" href="options.xhtml#opt-accounts.calendar.accounts._name_.khal.color"><code class="option">accounts.calendar.accounts.&lt;name&gt;.khal.color</code>
   </a>
  </span>
 </dt>
 <dd>
-<p>Color in which events in this calendar are displayed.</p>
+<p>Color in which events in this calendar are displayed.
+For instance ‘light green’ or an RGB color ‘#ff0000’</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-null or one of “black”, “white”, “brown”, “yellow”, “dark gray”, “dark green”, “dark blue”, “light gray”, “light green”, “light blue”, “dark magenta”, “dark cyan”, “dark red”, “light magenta”, “light cyan”, “light red”</p>
+null or string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">null</code></p>
@@ -1216,6 +1242,31 @@ boolean</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-accounts.contact.accounts._name_.khal.addresses"></a><a class="term" href="options.xhtml#opt-accounts.contact.accounts._name_.khal.addresses"><code class="option">accounts.contact.accounts.&lt;name&gt;.khal.addresses</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Email addresses to be associated with this account. Used to check the
+participation status (“PARTSTAT”), refer to khal documentation.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/accounts/contacts.nix" target="_top">
+&lt;home-manager/modules/accounts/contacts.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-accounts.contact.accounts._name_.khal.collections"></a><a class="term" href="options.xhtml#opt-accounts.contact.accounts._name_.khal.collections"><code class="option">accounts.contact.accounts.&lt;name&gt;.khal.collections</code>
   </a>
  </span>
@@ -1245,10 +1296,11 @@ null or (list of string)</p>
  </span>
 </dt>
 <dd>
-<p>Color in which events in this calendar are displayed.</p>
+<p>Color in which events in this calendar are displayed.
+For instance ‘light green’ or an RGB color ‘#ff0000’</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-null or one of “black”, “white”, “brown”, “yellow”, “dark gray”, “dark green”, “dark blue”, “light gray”, “light green”, “light blue”, “dark magenta”, “dark cyan”, “dark red”, “light magenta”, “light cyan”, “light red”</p>
+null or string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">null</code></p>
@@ -13615,6 +13667,30 @@ boolean</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-programs.bacon.package"></a><a class="term" href="options.xhtml#opt-programs.bacon.package"><code class="option">programs.bacon.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The bacon package to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.bacon</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/bacon.nix" target="_top">
+&lt;home-manager/modules/programs/bacon.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-programs.bacon.settings"></a><a class="term" href="options.xhtml#opt-programs.bacon.settings"><code class="option">programs.bacon.settings</code>
   </a>
  </span>
@@ -13625,6 +13701,9 @@ For available settings see <a class="link" href="https://dystroy.org/bacon/#glob
 
 <p><span class="emphasis"><em>Type:</em></span>
 TOML value</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
   jobs = {
@@ -16071,6 +16150,124 @@ attribute set of (boolean or floating point number or signed integer or string)<
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-programs.bun.enable"></a><a class="term" href="options.xhtml#opt-programs.bun.enable"><code class="option">programs.bun.enable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Bun JavaScript runtime.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/bun.nix" target="_top">
+&lt;home-manager/modules/programs/bun.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.bun.enableGitIntegration"></a><a class="term" href="options.xhtml#opt-programs.bun.enableGitIntegration"><code class="option">programs.bun.enableGitIntegration</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Git integration.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/bun.nix" target="_top">
+&lt;home-manager/modules/programs/bun.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.bun.package"></a><a class="term" href="options.xhtml#opt-programs.bun.package"><code class="option">programs.bun.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The bun package to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.bun</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/bun.nix" target="_top">
+&lt;home-manager/modules/programs/bun.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.bun.settings"></a><a class="term" href="options.xhtml#opt-programs.bun.settings"><code class="option">programs.bun.settings</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Configuration written to
+<code class="filename">$XDG_CONFIG_HOME/.bunfig.toml</code>.</p><p>See <a class="link" href="https://bun.sh/docs/runtime/bunfig"  target="_top">https://bun.sh/docs/runtime/bunfig</a>
+for the full list of options.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+TOML value</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
+  smol = true;
+  telemetry = false;
+  test = {
+    coverage = true;
+    coverageThreshold = 0.9;
+  };
+  install.lockfile = {
+    print = &quot;yarn&quot;;
+  };
+}
+
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/bun.nix" target="_top">
+&lt;home-manager/modules/programs/bun.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-programs.carapace.enable"></a><a class="term" href="options.xhtml#opt-programs.carapace.enable"><code class="option">programs.carapace.enable</code>
   </a>
  </span>
@@ -18467,6 +18664,33 @@ string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">&quot;‹name›&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/firefox.nix" target="_top">
+&lt;home-manager/modules/programs/firefox.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.firefox.profiles._name_.containersForce"></a><a class="term" href="options.xhtml#opt-programs.firefox.profiles._name_.containersForce"><code class="option">programs.firefox.profiles.&lt;name&gt;.containersForce</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to force replace the existing containers
+configuration. This is recommended since Firefox will
+replace the symlink on every launch, but note that you’ll
+lose any existing configuration by enabling this.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -26402,7 +26626,8 @@ package</p>
  </span>
 </dt>
 <dd>
-<p>Aliases written to <code class="filename">$XDG_CONFIG_HOME/k9s/aliases.yaml</code>. See
+<p>Aliases written to <code class="filename">$XDG_CONFIG_HOME/k9s/aliases.yaml</code> (linux)
+or <code class="filename">Library/Application Support/k9s/aliases.yaml</code> (darwin). See
 <a class="link" href="https://k9scli.io/topics/aliases/"  target="_top">https://k9scli.io/topics/aliases/</a> for supported values.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
@@ -26434,7 +26659,8 @@ YAML value</p>
  </span>
 </dt>
 <dd>
-<p>Hotkeys written to <code class="filename">$XDG_CONFIG_HOME/k9s/hotkey.yaml</code>. See
+<p>Hotkeys written to <code class="filename">$XDG_CONFIG_HOME/k9s/hotkeys.yaml</code> (linux)
+or <code class="filename">Library/Application Support/k9s/hotkeys.yaml</code> (darwin). See
 <a class="link" href="https://k9scli.io/topics/hotkeys/"  target="_top">https://k9scli.io/topics/hotkeys/</a> for supported values.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
@@ -26472,7 +26698,8 @@ YAML value</p>
  </span>
 </dt>
 <dd>
-<p>Plugins written to <code class="filename">$XDG_CONFIG_HOME/k9s/plugin.yaml</code>. See
+<p>Plugins written to <code class="filename">$XDG_CONFIG_HOME/k9s/plugins.yaml (linux)</code>
+or <code class="filename">Library/Application Support/k9s/plugins.yaml</code> (darwin). See
 <a class="link" href="https://k9scli.io/topics/plugins/"  target="_top">https://k9scli.io/topics/plugins/</a> for supported values.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
@@ -26520,7 +26747,8 @@ YAML value</p>
  </span>
 </dt>
 <dd>
-<p>Configuration written to <code class="filename">$XDG_CONFIG_HOME/k9s/config.yaml</code>. See
+<p>Configuration written to <code class="filename">$XDG_CONFIG_HOME/k9s/config.yaml</code> (linux)
+or <code class="filename">Library/Application Support/k9s/config.yaml</code> (darwin), See
 <a class="link" href="https://k9scli.io/topics/config/"  target="_top">https://k9scli.io/topics/config/</a> for supported values.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
@@ -26551,7 +26779,8 @@ YAML value</p>
  </span>
 </dt>
 <dd>
-<p>Skin files written to <code class="filename">$XDG_CONFIG_HOME/k9s/skins/</code>. See
+<p>Skin files written to <code class="filename">$XDG_CONFIG_HOME/k9s/skins/</code> (linux)
+or <code class="filename">Library/Application Support/k9s/skins/</code> (darwin). See
 <a class="link" href="https://k9scli.io/topics/skins/"  target="_top">https://k9scli.io/topics/skins/</a> for supported values.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
@@ -26586,7 +26815,9 @@ attribute set of (YAML value)</p>
  </span>
 </dt>
 <dd>
-<p>Resource column views written to <code class="filename">$XDG_CONFIG_HOME/k9s/views.yaml</code>.
+<p>Resource column views written to
+<code class="filename">$XDG_CONFIG_HOME/k9s/views.yaml (linux)</code>
+or <code class="filename">Library/Application Support/k9s/views.yaml</code> (darwin).
 See <a class="link" href="https://k9scli.io/topics/columns/"  target="_top">https://k9scli.io/topics/columns/</a> for supported values.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
@@ -33517,6 +33748,45 @@ See the example for more info.</p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">pyPkgs: with pyPkgs; [ python-language-server ]</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/neovim.nix" target="_top">
+&lt;home-manager/modules/programs/neovim.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.neovim.extraWrapperArgs"></a><a class="term" href="options.xhtml#opt-programs.neovim.extraWrapperArgs"><code class="option">programs.neovim.extraWrapperArgs</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Extra arguments to be passed to the neovim wrapper.
+This option sets environment variables required for building and running binaries
+with external package managers like mason.nvim.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">[
+  &quot;--suffix&quot;
+  &quot;LIBRARY_PATH&quot;
+  &quot;:&quot;
+  &quot;${lib.makeLibraryPath [ pkgs.stdenv.cc.cc pkgs.zlib ]}&quot;
+  &quot;--suffix&quot;
+  &quot;PKG_CONFIG_PATH&quot;
+  &quot;:&quot;
+  &quot;${lib.makeSearchPathOutput &quot;dev&quot; &quot;lib/pkgconfig&quot; [ pkgs.stdenv.cc.cc pkgs.zlib ]}&quot;
+]
+
+</code></pre>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -60028,6 +60298,33 @@ boolean</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-services.kdeconnect.package"></a><a class="term" href="options.xhtml#opt-services.kdeconnect.package"><code class="option">services.kdeconnect.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The KDE connect package to use</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&lt;derivation kdeconnect-kde-23.08.5&gt;</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">pkgs.kdePackages.kdeconnect-kde</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/kdeconnect.nix" target="_top">
+&lt;home-manager/modules/services/kdeconnect.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-services.kdeconnect.indicator"></a><a class="term" href="options.xhtml#opt-services.kdeconnect.indicator"><code class="option">services.kdeconnect.indicator</code>
   </a>
  </span>
@@ -71740,7 +72037,7 @@ list of string</p>
 </code></pre>
 
 <p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">[
-  &quot;-all&quot;
+  &quot;--all&quot;
 ]
 </code></pre>
 
