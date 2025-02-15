@@ -3002,7 +3002,7 @@ the IMAP, SMTP, and JMAP server configuration may be set
 automatically.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-one of “plain”, “gmail.com”, “runbox.com”, “fastmail.com”, “yandex.com”, “outlook.office365.com”</p>
+one of “plain”, “gmail.com”, “runbox.com”, “fastmail.com”, “yandex.com”, “outlook.office365.com”, “migadu.com”</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">&quot;plain&quot;</code></p>
@@ -3401,7 +3401,7 @@ boolean</p>
 </dt>
 <dd>
 <p>Himalaya CLI configuration for this email account.
-See <a class="link" href="https://pimalaya.org/himalaya/cli/latest/configuration/index.html#account-configuration"  target="_top">https://pimalaya.org/himalaya/cli/latest/configuration/index.html#account-configuration</a> for supported values.</p>
+See <a class="link" href="https://github.com/pimalaya/himalaya/blob/master/config.sample.toml"  target="_top">https://github.com/pimalaya/himalaya/blob/master/config.sample.toml</a> for supported values.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 TOML value</p>
@@ -8606,6 +8606,171 @@ lazy attribute set of (string or path or signed integer or floating point number
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-home.shell.enableBashIntegration"></a><a class="term" href="options.xhtml#opt-home.shell.enableBashIntegration"><code class="option">home.shell.enableBashIntegration</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Bash integration.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<a class="xref" href="options.xhtml#opt-home.shell.enableShellIntegration"  ><code class="option">home.shell.enableShellIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/misc/shell.nix" target="_top">
+&lt;home-manager/modules/misc/shell.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-home.shell.enableFishIntegration"></a><a class="term" href="options.xhtml#opt-home.shell.enableFishIntegration"><code class="option">home.shell.enableFishIntegration</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Fish integration.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<a class="xref" href="options.xhtml#opt-home.shell.enableShellIntegration"  ><code class="option">home.shell.enableShellIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/misc/shell.nix" target="_top">
+&lt;home-manager/modules/misc/shell.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-home.shell.enableIonIntegration"></a><a class="term" href="options.xhtml#opt-home.shell.enableIonIntegration"><code class="option">home.shell.enableIonIntegration</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Ion integration.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<a class="xref" href="options.xhtml#opt-home.shell.enableShellIntegration"  ><code class="option">home.shell.enableShellIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/misc/shell.nix" target="_top">
+&lt;home-manager/modules/misc/shell.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-home.shell.enableNushellIntegration"></a><a class="term" href="options.xhtml#opt-home.shell.enableNushellIntegration"><code class="option">home.shell.enableNushellIntegration</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Nushell integration.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<a class="xref" href="options.xhtml#opt-home.shell.enableShellIntegration"  ><code class="option">home.shell.enableShellIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/misc/shell.nix" target="_top">
+&lt;home-manager/modules/misc/shell.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-home.shell.enableShellIntegration"></a><a class="term" href="options.xhtml#opt-home.shell.enableShellIntegration"><code class="option">home.shell.enableShellIntegration</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to globally enable shell integration for all supported shells.</p><p>Individual shell integrations can be overridden with their respective
+<code class="literal">shell.enable&lt;SHELL&gt;Integration</code> option. For example, the following
+declaration globally disables shell integration for Bash:</p><pre><code class="programlisting nix">home.shell.enableBashIntegration = false;
+</code></pre>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/misc/shell.nix" target="_top">
+&lt;home-manager/modules/misc/shell.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-home.shell.enableZshIntegration"></a><a class="term" href="options.xhtml#opt-home.shell.enableZshIntegration"><code class="option">home.shell.enableZshIntegration</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Zsh integration.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<a class="xref" href="options.xhtml#opt-home.shell.enableShellIntegration"  ><code class="option">home.shell.enableShellIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/misc/shell.nix" target="_top">
+&lt;home-manager/modules/misc/shell.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-home.shellAliases"></a><a class="term" href="options.xhtml#opt-home.shellAliases"><code class="option">home.shellAliases</code>
   </a>
  </span>
@@ -8807,6 +8972,31 @@ package</p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">pkgs.kdePackages.fcitx5-with-addons</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/i18n/input-method/fcitx5.nix" target="_top">
+&lt;home-manager/modules/i18n/input-method/fcitx5.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-i18n.inputMethod.fcitx5.waylandFrontend"></a><a class="term" href="options.xhtml#opt-i18n.inputMethod.fcitx5.waylandFrontend"><code class="option">i18n.inputMethod.fcitx5.waylandFrontend</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Use the Wayland input method frontend.
+See <a class="link" href="https://fcitx-im.org/wiki/Using_Fcitx_5_on_Wayland"  target="_top">Using Fcitx 5 on Wayland</a>.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -12339,6 +12529,684 @@ attribute set of strings concatenated with “\n”</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-programs.aerospace.enable"></a><a class="term" href="options.xhtml#opt-programs.aerospace.enable"><code class="option">programs.aerospace.enable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable AeroSpace window manager.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.package"></a><a class="term" href="options.xhtml#opt-programs.aerospace.package"><code class="option">programs.aerospace.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The aerospace package to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.aerospace</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings"><code class="option">programs.aerospace.userSettings</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>AeroSpace configuration, see
+<a class="link" href="https://nikitabobko.github.io/AeroSpace/guide#configuring-aerospace"  target="_top">https://nikitabobko.github.io/AeroSpace/guide#configuring-aerospace</a>
+for supported values.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+TOML value</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
+  gaps = {
+    outer.left = 8;
+    outer.bottom = 8;
+    outer.top = 8;
+    outer.right = 8;
+  };
+  mode.main.binding = {
+    alt-h = &quot;focus left&quot;;
+    alt-j = &quot;focus down&quot;;
+    alt-k = &quot;focus up&quot;;
+    alt-l = &quot;focus right&quot;;
+  };
+}
+
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.enable-normalization-flatten-containers"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.enable-normalization-flatten-containers"><code class="option">programs.aerospace.userSettings.enable-normalization-flatten-containers</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Containers that have only one child are “flattened”.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.enable-normalization-opposite-orientation-for-nested-containers"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.enable-normalization-opposite-orientation-for-nested-containers"><code class="option">programs.aerospace.userSettings.enable-normalization-opposite-orientation-for-nested-containers</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Containers that nest into each other must have opposite orientations.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.accordion-padding"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.accordion-padding"><code class="option">programs.aerospace.userSettings.accordion-padding</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Padding between windows in an accordion container.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+signed integer</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">30</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.after-login-command"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.after-login-command"><code class="option">programs.aerospace.userSettings.after-login-command</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>You can use it to add commands that run after login to macOS user session.
+‘start-at-login’ needs to be ‘true’ for ‘after-login-command’ to work.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.after-startup-command"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.after-startup-command"><code class="option">programs.aerospace.userSettings.after-startup-command</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>You can use it to add commands that run after AeroSpace startup.
+‘after-startup-command’ is run after ‘after-login-command’</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">[
+  &quot;layout tiles&quot;
+]
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.default-root-container-layout"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.default-root-container-layout"><code class="option">programs.aerospace.userSettings.default-root-container-layout</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Default layout for the root container.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “tiles”, “accordion”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;tiles&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.default-root-container-orientation"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.default-root-container-orientation"><code class="option">programs.aerospace.userSettings.default-root-container-orientation</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Default orientation for the root container.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “horizontal”, “vertical”, “auto”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;auto&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.exec-on-workspace-change"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.exec-on-workspace-change"><code class="option">programs.aerospace.userSettings.exec-on-workspace-change</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Commands to run every time workspace changes.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">[
+  &quot;/bin/bash&quot;
+  &quot;-c&quot;
+  &quot;sketchybar --trigger aerospace_workspace_change FOCUSED=$AEROSPACE_FOCUSED_WORKSPACE&quot;
+]
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.key-mapping.preset"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.key-mapping.preset"><code class="option">programs.aerospace.userSettings.key-mapping.preset</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Keymapping preset.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “qwerty”, “dvorak”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;qwerty&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.on-focus-changed"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.on-focus-changed"><code class="option">programs.aerospace.userSettings.on-focus-changed</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Commands to run every time focused window or workspace changes.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">[
+  &quot;move-mouse monitor-lazy-center&quot;
+]
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.on-focused-monitor-changed"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.on-focused-monitor-changed"><code class="option">programs.aerospace.userSettings.on-focused-monitor-changed</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Commands to run every time focused monitor changes.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">[
+  &quot;move-mouse monitor-lazy-center&quot;
+]
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.on-window-detected"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.on-window-detected"><code class="option">programs.aerospace.userSettings.on-window-detected</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Commands to run every time a new window is detected with optional conditions.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of (submodule)</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">[
+  {
+    check-further-callbacks = false;
+    if = {
+      app-id = &quot;Another.Cool.App&quot;;
+      app-name-regex-substring = &quot;CoolApp&quot;;
+      during-aerospace-startup = false;
+      window-title-regex-substring = &quot;Title&quot;;
+      workspace = &quot;cool-workspace&quot;;
+    };
+    run = [
+      &quot;move-node-to-workspace m&quot;
+      &quot;resize-node&quot;
+    ];
+  }
+]
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.on-window-detected._.check-further-callbacks"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.on-window-detected._.check-further-callbacks"><code class="option">programs.aerospace.userSettings.on-window-detected.*.check-further-callbacks</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to check further callbacks after this rule (optional).</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.on-window-detected._.if"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.on-window-detected._.if"><code class="option">programs.aerospace.userSettings.on-window-detected.*.if</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Conditions for detecting a window.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+submodule</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.on-window-detected._.if.app-id"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.on-window-detected._.if.app-id"><code class="option">programs.aerospace.userSettings.on-window-detected.*.if.app-id</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The application ID to match (optional).</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.on-window-detected._.if.app-name-regex-substring"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.on-window-detected._.if.app-name-regex-substring"><code class="option">programs.aerospace.userSettings.on-window-detected.*.if.app-name-regex-substring</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Regex substring to match the app name (optional).</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.on-window-detected._.if.during-aerospace-startup"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.on-window-detected._.if.during-aerospace-startup"><code class="option">programs.aerospace.userSettings.on-window-detected.*.if.during-aerospace-startup</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to match during aerospace startup (optional).</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.on-window-detected._.if.window-title-regex-substring"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.on-window-detected._.if.window-title-regex-substring"><code class="option">programs.aerospace.userSettings.on-window-detected.*.if.window-title-regex-substring</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Substring to match in the window title (optional).</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.on-window-detected._.if.workspace"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.on-window-detected._.if.workspace"><code class="option">programs.aerospace.userSettings.on-window-detected.*.if.workspace</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The workspace name to match (optional).</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.on-window-detected._.run"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.on-window-detected._.run"><code class="option">programs.aerospace.userSettings.on-window-detected.*.run</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Commands to execute when the conditions match (required).</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string or list of string</p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">[
+  &quot;move-node-to-workspace m&quot;
+  &quot;resize-node&quot;
+]
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.start-at-login"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.start-at-login"><code class="option">programs.aerospace.userSettings.start-at-login</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Start AeroSpace at login.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.aerospace.userSettings.workspace-to-monitor-force-assignment"></a><a class="term" href="options.xhtml#opt-programs.aerospace.userSettings.workspace-to-monitor-force-assignment"><code class="option">programs.aerospace.userSettings.workspace-to-monitor-force-assignment</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Map workspaces to specific monitors.
+Left-hand side is the workspace name, and right-hand side is the monitor pattern.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or (attribute set of (signed integer or string or list of string))</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
+  &quot;1&quot; = 1;
+  &quot;2&quot; = &quot;main&quot;;
+  &quot;3&quot; = &quot;secondary&quot;;
+  &quot;4&quot; = &quot;built-in&quot;;
+  &quot;5&quot; = &quot;^built-in retina display$&quot;;
+  &quot;6&quot; = [
+    &quot;secondary&quot;
+    &quot;dell&quot;
+  ];
+}
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/aerospace.nix" target="_top">
+&lt;home-manager/modules/programs/aerospace.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-programs.afew.enable"></a><a class="term" href="options.xhtml#opt-programs.afew.enable"><code class="option">programs.afew.enable</code>
   </a>
  </span>
@@ -13169,14 +14037,16 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable Atuin’s Bash integration. This will bind
-<code class="literal">ctrl-r</code> to open the Atuin history.</p>
+<p>Whether to enable Bash integration.</p><p>If enabled, this will bind <code class="literal">ctrl-r</code> to open the Atuin history.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -13194,13 +14064,16 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable Atuin’s Fish integration.</p><p>If enabled, this will bind the up-arrow key to open the Atuin history.</p>
+<p>Whether to enable Fish integration.</p><p>If enabled, this will bind the up-arrow key to open the Atuin history.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -13224,7 +14097,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableNushellIntegration"  ><code class="option">home.shell.enableNushellIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -13242,14 +14118,17 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable Atuin’s Zsh integration.</p><p>If enabled, this will bind <code class="literal">ctrl-r</code> and the up-arrow
-key to open the Atuin history.</p>
+<p>Whether to enable Zsh integration.</p><p>If enabled, this will bind <code class="literal">ctrl-r</code> and the up-arrow key to open the
+Atuin history.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -13440,7 +14319,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -13464,7 +14346,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -13488,7 +14373,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -14681,7 +15569,7 @@ null or string</p>
 <p>Number of history lines to keep on file.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-signed integer</p>
+null or signed integer</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">100000</code></p>
@@ -14736,7 +15624,7 @@ list of string</p>
 <p>Number of history lines to keep in memory.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-signed integer</p>
+null or signed integer</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">10000</code></p>
@@ -16541,7 +17429,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -16565,7 +17456,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -16589,7 +17483,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableNushellIntegration"  ><code class="option">home.shell.enableNushellIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -16613,7 +17510,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -17114,10 +18014,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -17141,10 +18041,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -17168,10 +18068,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableNushellIntegration"  ><code class="option">home.shell.enableNushellIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -17195,10 +18095,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -18080,7 +18980,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -18104,7 +19007,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -18128,7 +19034,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -18237,7 +19146,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -18255,16 +19167,19 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable Fish integration. Note, enabling the direnv module
-will always active its functionality for Fish since the direnv package
-automatically gets loaded in Fish. If this is not the case try adding</p><pre><code class="programlisting nix">  environment.pathsToLink = [ &quot;/share/fish&quot; ];
+<p>Whether to enable Fish integration.</p><p>Note, enabling the direnv module will always active its functionality
+for Fish since the direnv package automatically gets loaded in Fish.
+If this is not the case try adding</p><pre><code class="programlisting nix">environment.pathsToLink = [ &quot;/share/fish&quot; ];
 </code></pre><p>to the system configuration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean <span class="emphasis"><em>(read only)</em></span></p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -18288,7 +19203,10 @@ boolean <span class="emphasis"><em>(read only)</em></span></p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableNushellIntegration"  ><code class="option">home.shell.enableNushellIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -18312,7 +19230,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -18970,10 +19891,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -18997,10 +19918,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -19024,10 +19945,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -19076,7 +19997,10 @@ package</p>
 <code class="filename">$XDG_CONFIG_HOME/eww</code>.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-path</p>
+null or path</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">./eww-config-dir</code></p>
@@ -19130,10 +20054,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -19157,10 +20081,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -19184,10 +20108,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableIonIntegration"  ><code class="option">home.shell.enableIonIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -19211,10 +20135,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">false</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableNushellIntegration"  ><code class="option">home.shell.enableNushellIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -19238,10 +20162,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -20267,12 +21191,12 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>List of ‹name› add-on packages to install for this profile.
+<p>List of Firefox add-on packages to install for this profile.
 Some pre-packaged add-ons are accessible from the
 <a class="link" href="https://github.com/nix-community/NUR"  target="_top">Nix User Repository</a>.
 Once you have NUR installed run</p><pre><code class="programlisting console">$ nix-env -f &#x27;&lt;nixpkgs&gt;&#x27; -qaP -A nur.repos.rycee.firefox-addons
-</code></pre><p>to list the available ‹name› add-ons.</p><p>Note that it is necessary to manually enable these extensions
-inside ‹name› after the first installation.</p><p>To automatically enable extensions add
+</code></pre><p>to list the available Firefox add-ons.</p><p>Note that it is necessary to manually enable these extensions
+inside Firefox after the first installation.</p><p>To automatically enable extensions add
 <code class="literal">&quot;extensions.autoDisableScopes&quot; = 0;</code>
 to
 <a class="link" href="options.xhtml#opt-programs.firefox.profiles._name_.settings"  ><code class="option">programs.firefox.profiles.&lt;profile&gt;.settings</code></a></p>
@@ -20408,6 +21332,34 @@ string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">&quot;‹name›&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/firefox.nix" target="_top">
+&lt;home-manager/modules/programs/firefox.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.firefox.profiles._name_.preConfig"></a><a class="term" href="options.xhtml#opt-programs.firefox.profiles._name_.preConfig"><code class="option">programs.firefox.profiles.&lt;name&gt;.preConfig</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Extra preferences to add to <code class="filename">user.js</code>, before
+<a class="xref" href="options.xhtml#opt-programs.firefox.profiles._name_.settings"  ><code class="option">programs.firefox.profiles.&lt;name&gt;.settings</code></a>.</p><p>Use <a class="xref" href="options.xhtml#opt-programs.firefox.profiles._name_.extraConfig"  ><code class="option">programs.firefox.profiles.&lt;name&gt;.extraConfig</code></a>, unless
+you want to overwrite in
+<a class="xref" href="options.xhtml#opt-programs.firefox.profiles._name_.settings"  ><code class="option">programs.firefox.profiles.&lt;name&gt;.settings</code></a>, then use this
+option.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+strings concatenated with “\n”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;&quot;</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -20622,12 +21574,12 @@ null or string</p>
  </span>
 </dt>
 <dd>
-<p>Attribute set of ‹name› preferences.</p><p>‹name› only supports int, bool, and string types for
+<p>Attribute set of Firefox preferences.</p><p>Firefox only supports int, bool, and string types for
 preferences, but home-manager will automatically
 convert all other JSON-compatible values into strings.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-attribute set of (‹name› preference (int, bool, string, and also attrs, list, float as a JSON string))</p>
+attribute set of (Firefox preference (int, bool, string, and also attrs, list, float as a JSON string))</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">{ }</code></p>
@@ -20663,7 +21615,7 @@ attribute set of (‹name› preference (int, bool, string, and also attrs, list
  </span>
 </dt>
 <dd>
-<p>Custom ‹name› user chrome CSS.</p>
+<p>Custom Firefox user chrome CSS.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 strings concatenated with “\n”</p>
@@ -20702,7 +21654,7 @@ strings concatenated with “\n”</p>
  </span>
 </dt>
 <dd>
-<p>Custom ‹name› user content CSS.</p>
+<p>Custom Firefox user content CSS.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 strings concatenated with “\n”</p>
@@ -21256,7 +22208,7 @@ null or package <span class="emphasis"><em>(read only)</em></span></p>
 <p>The language packs to install. Available language codes can be found
 on the releases page:
 <code class="literal">https://releases.mozilla.org/pub/firefox/releases/${version}/linux-x86_64/xpi/</code>,
-replacing <code class="literal">${version}</code> with the version of Firefox you have.</p>
+replacing <code class="literal">${version}</code> with the version of Floorp you have.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 list of string</p>
@@ -21558,7 +22510,7 @@ string</p>
 </dt>
 <dd>
 <p>Whether to force replace the existing containers configuration.
-This is recommended since Firefox will replace the symlink on
+This is recommended since Floorp will replace the symlink on
 every launch, but note that you’ll lose any existing configuration
 by enabling this.</p>
 
@@ -21584,12 +22536,12 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>List of ‹name› add-on packages to install for this profile.
+<p>List of Floorp add-on packages to install for this profile.
 Some pre-packaged add-ons are accessible from the
 <a class="link" href="https://github.com/nix-community/NUR"  target="_top">Nix User Repository</a>.
 Once you have NUR installed run</p><pre><code class="programlisting console">$ nix-env -f &#x27;&lt;nixpkgs&gt;&#x27; -qaP -A nur.repos.rycee.firefox-addons
-</code></pre><p>to list the available ‹name› add-ons.</p><p>Note that it is necessary to manually enable these extensions
-inside ‹name› after the first installation.</p><p>To automatically enable extensions add
+</code></pre><p>to list the available Floorp add-ons.</p><p>Note that it is necessary to manually enable these extensions
+inside Floorp after the first installation.</p><p>To automatically enable extensions add
 <code class="literal">&quot;extensions.autoDisableScopes&quot; = 0;</code>
 to
 <a class="link" href="options.xhtml#opt-programs.floorp.profiles._name_.settings"  ><code class="option">programs.floorp.profiles.&lt;profile&gt;.settings</code></a></p>
@@ -21725,6 +22677,34 @@ string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">&quot;‹name›&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/floorp.nix" target="_top">
+&lt;home-manager/modules/programs/floorp.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.floorp.profiles._name_.preConfig"></a><a class="term" href="options.xhtml#opt-programs.floorp.profiles._name_.preConfig"><code class="option">programs.floorp.profiles.&lt;name&gt;.preConfig</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Extra preferences to add to <code class="filename">user.js</code>, before
+<a class="xref" href="options.xhtml#opt-programs.firefox.profiles._name_.settings"  ><code class="option">programs.firefox.profiles.&lt;name&gt;.settings</code></a>.</p><p>Use <a class="xref" href="options.xhtml#opt-programs.firefox.profiles._name_.extraConfig"  ><code class="option">programs.firefox.profiles.&lt;name&gt;.extraConfig</code></a>, unless
+you want to overwrite in
+<a class="xref" href="options.xhtml#opt-programs.firefox.profiles._name_.settings"  ><code class="option">programs.firefox.profiles.&lt;name&gt;.settings</code></a>, then use this
+option.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+strings concatenated with “\n”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;&quot;</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -21939,12 +22919,12 @@ null or string</p>
  </span>
 </dt>
 <dd>
-<p>Attribute set of ‹name› preferences.</p><p>‹name› only supports int, bool, and string types for
+<p>Attribute set of Floorp preferences.</p><p>Floorp only supports int, bool, and string types for
 preferences, but home-manager will automatically
 convert all other JSON-compatible values into strings.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-attribute set of (‹name› preference (int, bool, string, and also attrs, list, float as a JSON string))</p>
+attribute set of (Floorp preference (int, bool, string, and also attrs, list, float as a JSON string))</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">{ }</code></p>
@@ -21980,7 +22960,7 @@ attribute set of (‹name› preference (int, bool, string, and also attrs, list
  </span>
 </dt>
 <dd>
-<p>Custom ‹name› user chrome CSS.</p>
+<p>Custom Floorp user chrome CSS.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 strings concatenated with “\n”</p>
@@ -22019,7 +22999,7 @@ strings concatenated with “\n”</p>
  </span>
 </dt>
 <dd>
-<p>Custom ‹name› user content CSS.</p>
+<p>Custom Floorp user content CSS.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 strings concatenated with “\n”</p>
@@ -22373,7 +23353,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -22397,7 +23380,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -22421,7 +23407,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -23208,19 +24197,20 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable bash shell integration.</p><p>This is ensures that shell integration works in more scenarios, such as switching shells within Ghostty.
-But it is not needed to have shell integration.
-See <a class="link" href="https://ghostty.org/docs/features/shell-integration#manual-shell-integration-setup"  target="_top">https://ghostty.org/docs/features/shell-integration#manual-shell-integration-setup</a> for more information
-.</p>
+<p>Whether to enable Bash integration.</p><p>This ensures that shell integration works in more scenarios, such as
+switching shells within Ghostty. But it is not needed to have shell
+integration.</p><p>See
+<a class="link" href="https://ghostty.org/docs/features/shell-integration#manual-shell-integration-setup"  target="_top">https://ghostty.org/docs/features/shell-integration#manual-shell-integration-setup</a>
+for more information.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">false</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -23238,19 +24228,20 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable fish shell integration.</p><p>This is ensures that shell integration works in more scenarios, such as switching shells within Ghostty.
-But it is not needed to have shell integration.
-See <a class="link" href="https://ghostty.org/docs/features/shell-integration#manual-shell-integration-setup"  target="_top">https://ghostty.org/docs/features/shell-integration#manual-shell-integration-setup</a> for more information
-.</p>
+<p>Whether to enable Fish integration.</p><p>This ensures that shell integration works in more scenarios, such as
+switching shells within Ghostty. But it is not needed to have shell
+integration.</p><p>See
+<a class="link" href="https://ghostty.org/docs/features/shell-integration#manual-shell-integration-setup"  target="_top">https://ghostty.org/docs/features/shell-integration#manual-shell-integration-setup</a>
+for more information.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">false</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -23268,19 +24259,20 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable zsh shell integration.</p><p>This is ensures that shell integration works in more scenarios, such as switching shells within Ghostty.
-But it is not needed to have shell integration.
-See <a class="link" href="https://ghostty.org/docs/features/shell-integration#manual-shell-integration-setup"  target="_top">https://ghostty.org/docs/features/shell-integration#manual-shell-integration-setup</a> for more information
-.</p>
+<p>Whether to enable Zsh integration.</p><p>This ensures that shell integration works in more scenarios, such as
+switching shells within Ghostty. But it is not needed to have shell
+integration.</p><p>See
+<a class="link" href="https://ghostty.org/docs/features/shell-integration#manual-shell-integration-setup"  target="_top">https://ghostty.org/docs/features/shell-integration#manual-shell-integration-setup</a>
+for more information.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">false</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -23298,10 +24290,10 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>The ghostty package to use.</p>
+<p>The ghostty package to use. Set programs.ghostty.package to null on platfroms where ghostty is not available or marked broken</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-package</p>
+null or package</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">pkgs.ghostty</code></p>
@@ -23355,7 +24347,7 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">true</code> if programs.ghostty.package is not null</p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">true</code></p>
@@ -24446,42 +25438,21 @@ attribute set of string</p>
 </dd>
 <dt>
  <span class="term">
- <a id="opt-programs.git.signing"></a><a class="term" href="options.xhtml#opt-programs.git.signing"><code class="option">programs.git.signing</code>
+ <a id="opt-programs.git.signing.format"></a><a class="term" href="options.xhtml#opt-programs.git.signing.format"><code class="option">programs.git.signing.format</code>
   </a>
  </span>
 </dt>
 <dd>
-<p>Options related to signing commits using GnuPG.</p>
+<p>The signing method to use when signing commits and tags.
+Valid values are <code class="literal">openpgp</code> (OpenPGP/GnuPG), <code class="literal">ssh</code> (SSH), and <code class="literal">x509</code> (X.509 certificates).</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-null or (submodule)</p>
+one of “openpgp”, “ssh”, “x509”</p>
 
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">null</code></p>
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">&quot;openpgp&quot; for state version &lt; 25.05,
+undefined for state version ≥ 25.05
 
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/git.nix" target="_top">
-&lt;home-manager/modules/programs/git.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-programs.git.signing.gpgPath"></a><a class="term" href="options.xhtml#opt-programs.git.signing.gpgPath"><code class="option">programs.git.signing.gpgPath</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Path to GnuPG binary to use.</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;\${pkgs.gnupg}/bin/gpg2&quot;</code></p>
+</code></pre>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -24499,11 +25470,14 @@ string</p>
  </span>
 </dt>
 <dd>
-<p>The default GPG signing key fingerprint.</p><p>Set to <code class="literal">null</code> to let GnuPG decide what signing key
+<p>The default signing key fingerprint.</p><p>Set to <code class="literal">null</code> to let the signer decide what signing key
 to use depending on commit’s author.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 null or string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -24528,6 +25502,27 @@ boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/git.nix" target="_top">
+&lt;home-manager/modules/programs/git.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.git.signing.signer"></a><a class="term" href="options.xhtml#opt-programs.git.signing.signer"><code class="option">programs.git.signing.signer</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Path to signer binary to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -24745,6 +25740,138 @@ list of string</p>
 <tr><td>
 <code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/git-credential-oauth.nix" target="_top">
 &lt;home-manager/modules/programs/git-credential-oauth.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.git-worktree-switcher.enable"></a><a class="term" href="options.xhtml#opt-programs.git-worktree-switcher.enable"><code class="option">programs.git-worktree-switcher.enable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable git-worktree-switcher.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/git-worktree-switcher.nix" target="_top">
+&lt;home-manager/modules/programs/git-worktree-switcher.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.git-worktree-switcher.enableBashIntegration"></a><a class="term" href="options.xhtml#opt-programs.git-worktree-switcher.enableBashIntegration"><code class="option">programs.git-worktree-switcher.enableBashIntegration</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Bash integration.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/git-worktree-switcher.nix" target="_top">
+&lt;home-manager/modules/programs/git-worktree-switcher.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.git-worktree-switcher.enableFishIntegration"></a><a class="term" href="options.xhtml#opt-programs.git-worktree-switcher.enableFishIntegration"><code class="option">programs.git-worktree-switcher.enableFishIntegration</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Fish integration.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/git-worktree-switcher.nix" target="_top">
+&lt;home-manager/modules/programs/git-worktree-switcher.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.git-worktree-switcher.enableZshIntegration"></a><a class="term" href="options.xhtml#opt-programs.git-worktree-switcher.enableZshIntegration"><code class="option">programs.git-worktree-switcher.enableZshIntegration</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Zsh integration.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/git-worktree-switcher.nix" target="_top">
+&lt;home-manager/modules/programs/git-worktree-switcher.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.git-worktree-switcher.package"></a><a class="term" href="options.xhtml#opt-programs.git-worktree-switcher.package"><code class="option">programs.git-worktree-switcher.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The git-worktree-switcher package to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.git-worktree-switcher</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/git-worktree-switcher.nix" target="_top">
+&lt;home-manager/modules/programs/git-worktree-switcher.nix&gt;
 </a></code>
 </td></tr>
 </table>
@@ -26621,7 +27748,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -27715,7 +28845,7 @@ package</p>
 </dt>
 <dd>
 <p>Himalaya CLI global configuration.
-See <a class="link" href="https://pimalaya.org/himalaya/cli/latest/configuration/index.html#global-configuration"  target="_top">https://pimalaya.org/himalaya/cli/latest/configuration/index.html#global-configuration</a> for supported values.</p>
+See <a class="link" href="https://github.com/pimalaya/himalaya/blob/master/config.sample.toml"  target="_top">https://github.com/pimalaya/himalaya/blob/master/config.sample.toml</a> for supported values.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 TOML value</p>
@@ -27830,10 +28960,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -27857,10 +28987,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -32019,7 +33149,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -32043,7 +33176,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -32067,7 +33203,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableNushellIntegration"  ><code class="option">home.shell.enableNushellIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -32115,7 +33254,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -33026,17 +34168,18 @@ attribute set of (string or boolean or signed integer or floating point number)<
  </span>
 </dt>
 <dd>
-<p>Whether to enable Kitty Bash integration.</p>
+<p>Whether to enable Bash integration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
-<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">!(elem &quot;disabled&quot; (splitString &quot; &quot; config.programs.kitty.shellIntegration.mode))
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">(cfg.shellIntegration.mode != null)
+&amp;&amp; !(elem &quot;disabled&quot; (splitString &quot; &quot; config.programs.kitty.shellIntegration.mode))
 
 </code></pre>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -33054,17 +34197,18 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable Kitty fish integration.</p>
+<p>Whether to enable Fish integration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
-<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">!(elem &quot;disabled&quot; (splitString &quot; &quot; config.programs.kitty.shellIntegration.mode))
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">(cfg.shellIntegration.mode != null)
+&amp;&amp; !(elem &quot;disabled&quot; (splitString &quot; &quot; config.programs.kitty.shellIntegration.mode))
 
 </code></pre>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -33082,17 +34226,18 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable Kitty Z Shell integration.</p>
+<p>Whether to enable Zsh integration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
-<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">!(elem &quot;disabled&quot; (splitString &quot; &quot; config.programs.kitty.shellIntegration.mode))
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">(cfg.shellIntegration.mode != null)
+&amp;&amp; !(elem &quot;disabled&quot; (splitString &quot; &quot; config.programs.kitty.shellIntegration.mode))
 
 </code></pre>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -33112,12 +34257,12 @@ boolean</p>
 <dd>
 <p>Set the mode of the shell integration. This accepts the same options
 as the <code class="literal">shell_integration</code> option of Kitty. Note that
-<code class="literal">no-rc</code> is always implied. See
+<code class="literal">no-rc</code> is always implied, unless this set to <code class="literal">null</code>. See
 <a class="link" href="https://sw.kovidgoyal.net/kitty/shell-integration"  target="_top">https://sw.kovidgoyal.net/kitty/shell-integration</a>
 for more details.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-string</p>
+null or string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">&quot;no-rc&quot;</code></p>
@@ -33453,6 +34598,295 @@ paging = &quot;auto&quot;;
 <tr><td>
 <code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/kubecolor.nix" target="_top">
 &lt;home-manager/modules/programs/kubecolor.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lapce.enable"></a><a class="term" href="options.xhtml#opt-programs.lapce.enable"><code class="option">programs.lapce.enable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable lapce.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lapce.nix" target="_top">
+&lt;home-manager/modules/programs/lapce.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lapce.package"></a><a class="term" href="options.xhtml#opt-programs.lapce.package"><code class="option">programs.lapce.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The lapce package to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.lapce</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lapce.nix" target="_top">
+&lt;home-manager/modules/programs/lapce.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lapce.channel"></a><a class="term" href="options.xhtml#opt-programs.lapce.channel"><code class="option">programs.lapce.channel</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Lapce channel to configure.
+Should correspond to the package channel.
+This is used to determine the correct configuration and data directories.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+one of “stable”, “nightly”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;stable&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lapce.nix" target="_top">
+&lt;home-manager/modules/programs/lapce.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lapce.keymaps"></a><a class="term" href="options.xhtml#opt-programs.lapce.keymaps"><code class="option">programs.lapce.keymaps</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Keymaps written to <code class="filename">$XDG_CONFIG_HOME/lapce/keymaps.toml</code>.
+See <a class="link" href="https://github.com/lapce/lapce/blob/master/defaults/keymaps-common.toml"  target="_top">https://github.com/lapce/lapce/blob/master/defaults/keymaps-common.toml</a> for examples.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+TOML value</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">[
+  {
+    command = &quot;open_log_file&quot;;
+    key = &quot;Ctrl+Shift+L&quot;;
+  }
+]
+
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lapce.nix" target="_top">
+&lt;home-manager/modules/programs/lapce.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lapce.plugins"></a><a class="term" href="options.xhtml#opt-programs.lapce.plugins"><code class="option">programs.lapce.plugins</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Plugins to install.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of (submodule)</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">[
+  {
+    author = &quot;MrFoxPro&quot;;
+    name = &quot;lapce-nix&quot;;
+    version = &quot;0.0.1&quot;;
+    hash = &quot;sha256-...&quot;;
+  }
+  {
+    author = &quot;dzhou121&quot;;
+    name = &quot;lapce-rust&quot;;
+    version = &quot;0.3.1932&quot;;
+    hash = &quot;sha256-...&quot;;
+  }
+]
+
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lapce.nix" target="_top">
+&lt;home-manager/modules/programs/lapce.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lapce.plugins._.author"></a><a class="term" href="options.xhtml#opt-programs.lapce.plugins._.author"><code class="option">programs.lapce.plugins.*.author</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Author of the plugin.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lapce.nix" target="_top">
+&lt;home-manager/modules/programs/lapce.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lapce.plugins._.hash"></a><a class="term" href="options.xhtml#opt-programs.lapce.plugins._.hash"><code class="option">programs.lapce.plugins.*.hash</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Hash of the plugin tarball.
+To find the hash leave this empty, rebuild and copy the hash from the error message.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lapce.nix" target="_top">
+&lt;home-manager/modules/programs/lapce.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lapce.plugins._.name"></a><a class="term" href="options.xhtml#opt-programs.lapce.plugins._.name"><code class="option">programs.lapce.plugins.*.name</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Name of the plugin.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lapce.nix" target="_top">
+&lt;home-manager/modules/programs/lapce.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lapce.plugins._.version"></a><a class="term" href="options.xhtml#opt-programs.lapce.plugins._.version"><code class="option">programs.lapce.plugins.*.version</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Version of the plugin.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lapce.nix" target="_top">
+&lt;home-manager/modules/programs/lapce.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.lapce.settings"></a><a class="term" href="options.xhtml#opt-programs.lapce.settings"><code class="option">programs.lapce.settings</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Configuration written to <code class="filename">$XDG_CONFIG_HOME/lapce/settings.toml</code>.
+See <a class="link" href="https://github.com/lapce/lapce/blob/master/extra/schemas/settings.json"  target="_top">https://github.com/lapce/lapce/blob/master/extra/schemas/settings.json</a> for schema.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+TOML value</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
+  core = {
+    custom-titlebar = false;
+    color-theme = &quot;Custom&quot;;
+    icon-theme = &quot;Material Icons&quot;;
+  };
+  editor = {
+    font-family = &quot;FiraCode Nerd Bold Font, monospace&quot;;
+    font-size = 22;
+    tab-width = 2;
+    cursor-surrounding-lines = 4;
+    render-whitespace = &quot;all&quot;;
+    bracket-pair-colorization = true;
+    highlight-matching-brackets = true;
+  };
+  ui = {
+    font-size = 20;
+    open-editors-visible = false;
+  };
+  lapce-nix.lsp-path = &quot;$\{pkgs.nil\}/bin/nil&quot;;
+}
+
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lapce.nix" target="_top">
+&lt;home-manager/modules/programs/lapce.nix&gt;
 </a></code>
 </td></tr>
 </table>
@@ -34094,7 +35528,7 @@ boolean</p>
 <p>The language packs to install. Available language codes can be found
 on the releases page:
 <code class="literal">https://releases.mozilla.org/pub/firefox/releases/${version}/linux-x86_64/xpi/</code>,
-replacing <code class="literal">${version}</code> with the version of Firefox you have.</p>
+replacing <code class="literal">${version}</code> with the version of LibreWolf you have.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 list of string</p>
@@ -34931,7 +36365,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -34955,7 +36392,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -35003,7 +36443,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -35481,16 +36924,16 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable Bash Integration.</p>
+<p>Whether to enable Bash integration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -35508,16 +36951,16 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable Fish Integration.</p>
+<p>Whether to enable Fish integration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -35535,16 +36978,16 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable Zsh Integration.</p>
+<p>Whether to enable Zsh integration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -35822,6 +37265,37 @@ strings concatenated with “\n”</p>
   #           script-binding uosc/video   #! Video tracks
   # additional comments
 &#x27;&#x27;
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/mpv.nix" target="_top">
+&lt;home-manager/modules/programs/mpv.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.mpv.includes"></a><a class="term" href="options.xhtml#opt-programs.mpv.includes"><code class="option">programs.mpv.includes</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>List of configuration files to include at the end of mpv.conf.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">[
+  &quot;~/path/to/config.inc&quot;;
+  &quot;~/path/to/conditional.inc&quot;;
+]
+
 </code></pre>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
@@ -36296,10 +37770,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -36323,10 +37797,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -36350,10 +37824,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -37017,8 +38491,10 @@ string</p>
 <p><span class="emphasis"><em>Type:</em></span>
 one of “alias”, “attach”, “browser”, “compose”, “editor”, “generic”, “index”, “mix”, “pager”, “pgp”, “postpone”, “query”, “smime” or list of (one of “alias”, “attach”, “browser”, “compose”, “editor”, “generic”, “index”, “mix”, “pager”, “pgp”, “postpone”, “query”, “smime”)</p>
 
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;index&quot;</code></p>
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">[
+  &quot;index&quot;
+]
+</code></pre>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -37215,8 +38691,10 @@ string</p>
 <p><span class="emphasis"><em>Type:</em></span>
 one of “alias”, “attach”, “browser”, “compose”, “editor”, “generic”, “index”, “mix”, “pager”, “pgp”, “postpone”, “query”, “smime” or list of (one of “alias”, “attach”, “browser”, “compose”, “editor”, “generic”, “index”, “mix”, “pager”, “pgp”, “postpone”, “query”, “smime”)</p>
 
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;index&quot;</code></p>
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">[
+  &quot;index&quot;
+]
+</code></pre>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -38826,10 +40304,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -38853,10 +40331,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -38880,10 +40358,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -38959,10 +40437,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -38986,10 +40464,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableNushellIntegration"  ><code class="option">home.shell.enableNushellIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -39013,10 +40491,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -39630,7 +41108,7 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>The package to use for nushell.</p>
+<p>The nushell package to use.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 package</p>
@@ -39662,12 +41140,14 @@ null or (submodule)</p>
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">null</code></p>
 
-<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{ text = &#x27;&#x27;
-    let $config = {
-      filesize_metric: false
-      table_mode: rounded
-      use_ls_colors: true
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
+  text = &#x27;&#x27;
+    const NU_LIB_DIRS = $NU_LIB_DIRS ++ ${
+      lib.hm.nushell.toNushell (lib.concatStringsSep &quot;:&quot; [ ./scripts ])
     }
+    $env.config.filesize_metric = false
+    $env.config.table_mode = &#x27;rounded&#x27;
+    $env.config.use_ls_colors = true
   &#x27;&#x27;;
 }
 
@@ -39829,7 +41309,6 @@ attribute set of (null or (Nushell inline value) or boolean or signed integer or
 <p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
   FOO = &quot;BAR&quot;;
   LIST_VALUE = [ &quot;foo&quot; &quot;bar&quot; ];
-  NU_LIB_DIRS = lib.concatStringsSep &quot;:&quot; [ ./scripts ];
   PROMPT_COMMAND = lib.hm.nushell.mkNushellInline &#x27;&#x27;{|| &quot;&gt; &quot;}&#x27;&#x27;;
   ENV_CONVERSIONS.PATH = {
     from_string = lib.hm.nushell.mkNushellInline &quot;{|s| $s | split row (char esep) }&quot;;
@@ -40031,6 +41510,48 @@ list of package</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-programs.nushell.settings"></a><a class="term" href="options.xhtml#opt-programs.nushell.settings"><code class="option">programs.nushell.settings</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Nushell settings. These will be flattened and assigned one by one to <code class="literal">$env.config</code> to avoid overwriting the default or existing options.</p><p>For example:</p><pre><code class="programlisting nix">{
+  show_banner = false;
+  completions.external = {
+    enable = true;
+    max_results = 200;
+  };
+}
+</code></pre><p>becomes:</p><pre><code class="programlisting nushell">$env.config.completions.external.enable = true
+$env.config.completions.external.max_results = 200
+$env.config.show_banner = false
+</code></pre>
+
+<p><span class="emphasis"><em>Type:</em></span>
+attribute set of (null or (Nushell inline value) or boolean or signed integer or floating point number or string or path or (attribute set of Nushell values) or (list of Nushell values))</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">{ }</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
+  history = {
+    format = &quot;sqlite&quot;;
+  };
+  show_banner = false;
+}
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/nushell.nix" target="_top">
+&lt;home-manager/modules/programs/nushell.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-programs.nushell.shellAliases"></a><a class="term" href="options.xhtml#opt-programs.nushell.shellAliases"><code class="option">programs.nushell.shellAliases</code>
   </a>
  </span>
@@ -40046,6 +41567,7 @@ attribute set of string</p>
 <code class="literal">{ }</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
+  g = &quot;git&quot;;
   ll = &quot;ls -l&quot;;
 }
 </code></pre>
@@ -40442,7 +41964,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -40466,7 +41991,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -40490,7 +42018,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableNushellIntegration"  ><code class="option">home.shell.enableNushellIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -40514,7 +42045,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -40647,7 +42181,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -40671,7 +42208,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -40695,7 +42235,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -41363,10 +42906,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -41390,10 +42933,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -41417,10 +42960,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableNushellIntegration"  ><code class="option">home.shell.enableNushellIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -41444,10 +42987,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -41522,7 +43065,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -41546,7 +43092,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -41570,7 +43119,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -42723,13 +44275,16 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable pyenv’s Bash integration.</p>
+<p>Whether to enable Bash integration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -42747,13 +44302,16 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable pyenv’s Fish integration.</p>
+<p>Whether to enable Fish integration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -42771,13 +44329,16 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable pyenv’s Zsh integration.</p>
+<p>Whether to enable Zsh integration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -43802,10 +45363,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -43829,10 +45390,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -43856,10 +45417,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -44529,7 +46090,7 @@ boolean</p>
 package</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation rofi-1.7.7&gt;</code></p>
+<code class="literal">&lt;derivation rofi-1.7.8&gt;</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">pkgs.rofi.override { plugins = [ pkgs.rofi-emoji ]; };
 
@@ -45808,7 +47369,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -45826,13 +47390,16 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable fish integration.</p>
+<p>Whether to enable Fish integration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -45856,7 +47423,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -46612,7 +48182,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -46636,7 +48209,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -46660,7 +48236,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -48779,10 +50358,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -48806,10 +50385,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -48858,10 +50437,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableIonIntegration"  ><code class="option">home.shell.enableIonIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -48885,10 +50464,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableNushellIntegration"  ><code class="option">home.shell.enableNushellIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -48939,10 +50518,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -49522,6 +51101,33 @@ boolean</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-programs.tealdeer.enableAutoUpdates"></a><a class="term" href="options.xhtml#opt-programs.tealdeer.enableAutoUpdates"><code class="option">programs.tealdeer.enableAutoUpdates</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Auto updates.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/tealdeer.nix" target="_top">
+&lt;home-manager/modules/programs/tealdeer.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-programs.tealdeer.settings"></a><a class="term" href="options.xhtml#opt-programs.tealdeer.settings"><code class="option">programs.tealdeer.settings</code>
   </a>
  </span>
@@ -49530,7 +51136,7 @@ boolean</p>
 <p>Configuration written to
 <code class="filename">$XDG_CONFIG_HOME/tealdeer/config.toml</code> on Linux or
 <code class="filename">$HOME/Library/Application Support/tealdeer/config.toml</code> on Darwin.
-See <a class="link" href="https://dbrgn.github.io/tealdeer/config.html"  target="_top">https://dbrgn.github.io/tealdeer/config.html</a> for more information.</p>
+See <a class="link" href="https://tealdeer-rs.github.io/tealdeer/config.html"  target="_top">https://tealdeer-rs.github.io/tealdeer/config.html</a> for more information.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 null or (TOML value)</p>
@@ -50944,7 +52550,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -50968,10 +52577,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -51022,7 +52631,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableNushellIntegration"  ><code class="option">home.shell.enableNushellIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -51046,7 +52658,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -54533,16 +56148,16 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable watson’s bash integration.</p>
+<p>Whether to enable Bash integration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -54560,16 +56175,16 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable watson’s fish integration.</p>
+<p>Whether to enable Fish integration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -54587,16 +56202,16 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable watson’s zsh integration.</p>
+<p>Whether to enable Zsh integration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -54865,7 +56480,7 @@ make sure to also enable <code class="option">wayland.windowManager.sway.systemd
 otherwise the service may never be started.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-string</p>
+null or string</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">config.wayland.systemd.target</code></p>
@@ -54916,16 +56531,16 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable WezTerm’s Bash integration.</p>
+<p>Whether to enable Bash integration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -54943,16 +56558,16 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>Whether to enable WezTerm’s Zsh integration.</p>
+<p>Whether to enable Zsh integration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -55958,10 +57573,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -55985,10 +57600,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -56012,10 +57627,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableNushellIntegration"  ><code class="option">home.shell.enableNushellIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -56039,10 +57654,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -56504,7 +58119,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -56528,7 +58146,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -56552,7 +58173,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -56848,6 +58472,37 @@ list of package</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-programs.zed-editor.installRemoteServer"></a><a class="term" href="options.xhtml#opt-programs.zed-editor.installRemoteServer"><code class="option">programs.zed-editor.installRemoteServer</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to symlink the Zed’s remote server binary to the expected
+location. This allows remotely connecting to this system from a
+distant Zed client.</p><p>For more information, consult the
+<a class="link" href="https://wiki.nixos.org/wiki/Zed#Remote_Server"  target="_top">“Remote Server” section</a>
+in the wiki.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/zed-editor.nix" target="_top">
+&lt;home-manager/modules/programs/zed-editor.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-programs.zed-editor.userKeymaps"></a><a class="term" href="options.xhtml#opt-programs.zed-editor.userKeymaps"><code class="option">programs.zed-editor.userKeymaps</code>
   </a>
  </span>
@@ -56959,10 +58614,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">false</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -56986,10 +58641,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">false</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -57013,10 +58668,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">false</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -57059,7 +58714,8 @@ package</p>
 </dt>
 <dd>
 <p>Configuration written to
-<code class="filename">$XDG_CONFIG_HOME/zellij/config.yaml</code>.</p><p>See <a class="link" href="https://zellij.dev/documentation"  target="_top">https://zellij.dev/documentation</a> for the full
+<code class="filename">$XDG_CONFIG_HOME/zellij/config.kdl</code>.</p><p>If <code class="literal">programs.zellij.package.version</code> is older than 0.32.0, then
+the configuration is written to <code class="filename">$XDG_CONFIG_HOME/zellij/config.yaml</code>.</p><p>See <a class="link" href="https://zellij.dev/documentation"  target="_top">https://zellij.dev/documentation</a> for the full
 list of options.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
@@ -57218,7 +58874,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -57242,7 +58901,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -57266,7 +58928,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableNushellIntegration"  ><code class="option">home.shell.enableNushellIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -57290,7 +58955,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -57936,6 +59604,31 @@ boolean</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-programs.zsh.history.findNoDups"></a><a class="term" href="options.xhtml#opt-programs.zsh.history.findNoDups"><code class="option">programs.zsh.history.findNoDups</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Do not display a line previously found in the history
+file.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/zsh.nix" target="_top">
+&lt;home-manager/modules/programs/zsh.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-programs.zsh.history.ignoreAllDups"></a><a class="term" href="options.xhtml#opt-programs.zsh.history.ignoreAllDups"><code class="option">programs.zsh.history.ignoreAllDups</code>
   </a>
  </span>
@@ -58081,6 +59774,30 @@ signed integer</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">10000</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/zsh.nix" target="_top">
+&lt;home-manager/modules/programs/zsh.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.zsh.history.saveNoDups"></a><a class="term" href="options.xhtml#opt-programs.zsh.history.saveNoDups"><code class="option">programs.zsh.history.saveNoDups</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Do not write duplicate entries into the history file.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -62220,20 +63937,22 @@ list of string</p>
 </dd>
 <dt>
  <span class="term">
- <a id="opt-services.cliphist.systemdTarget"></a><a class="term" href="options.xhtml#opt-services.cliphist.systemdTarget"><code class="option">services.cliphist.systemdTarget</code>
+ <a id="opt-services.cliphist.systemdTargets"></a><a class="term" href="options.xhtml#opt-services.cliphist.systemdTargets"><code class="option">services.cliphist.systemdTargets</code>
   </a>
  </span>
 </dt>
 <dd>
-<p>The systemd target that will automatically start the cliphist service.</p><p>When setting this value to <code class="literal">&quot;sway-session.target&quot;</code>,
+<p>The systemd targets that will automatically start the cliphist service.</p><p>When setting this value to <code class="literal">[&quot;sway-session.target&quot;]</code>,
 make sure to also enable <code class="option">wayland.windowManager.sway.systemd.enable</code>,
-otherwise the service may never be started.</p>
+otherwise the service may never be started.</p><p>Note: A single string value is deprecated, please use a list.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-string</p>
+(list of string) or string</p>
 
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&quot;graphical-session.target&quot;</code></p>
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting">[
+  &quot;graphical-session.target&quot;
+]
+</code></pre>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">&quot;sway-session.target&quot;</code></p>
@@ -65170,10 +66889,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableBashIntegration"  ><code class="option">home.shell.enableBashIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -65222,10 +66941,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableFishIntegration"  ><code class="option">home.shell.enableFishIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -65249,10 +66968,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableNushellIntegration"  ><code class="option">home.shell.enableNushellIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -65327,10 +67046,10 @@ boolean</p>
 boolean</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">true</code></p>
+<a class="xref" href="options.xhtml#opt-home.shell.enableZshIntegration"  ><code class="option">home.shell.enableZshIntegration</code></a></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -65493,6 +67212,35 @@ null or signed integer</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/gpg-agent.nix" target="_top">
+&lt;home-manager/modules/services/gpg-agent.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.gpg-agent.noAllowExternalCache"></a><a class="term" href="options.xhtml#opt-services.gpg-agent.noAllowExternalCache"><code class="option">services.gpg-agent.noAllowExternalCache</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Tell Pinentry not to enable features which use an external cache for
+passphrases.</p><p>Some desktop environments prefer to unlock all credentials with one
+master password and may have installed a Pinentry which employs an
+additional external cache to implement such a policy. By using this
+option the Pinentry is advised not to make use of such a cache and
+instead always ask the user for the requested passphrase.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -66059,91 +67807,6 @@ null or string or (positive integer, meaning &gt;0)</p>
 <tr><td>
 <code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/gromit-mpx.nix" target="_top">
 &lt;home-manager/modules/services/gromit-mpx.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-services.himalaya-watch.enable"></a><a class="term" href="options.xhtml#opt-services.himalaya-watch.enable"><code class="option">services.himalaya-watch.enable</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Whether to enable the email client Himalaya CLI envelopes watcher service.</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-boolean</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">false</code></p>
-
-<p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">true</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/himalaya.nix" target="_top">
-&lt;home-manager/modules/programs/himalaya.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-services.himalaya-watch.environment"></a><a class="term" href="options.xhtml#opt-services.himalaya-watch.environment"><code class="option">services.himalaya-watch.environment</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Extra environment variables to be exported in the service.</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-attribute set of string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">{ }</code></p>
-
-<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">{
-  &quot;PASSWORD_STORE_DIR&quot; = &quot;~/.password-store&quot;;
-}
-
-</code></pre>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/himalaya.nix" target="_top">
-&lt;home-manager/modules/programs/himalaya.nix&gt;
-</a></code>
-</td></tr>
-</table>
-</dd>
-<dt>
- <span class="term">
- <a id="opt-services.himalaya-watch.settings.account"></a><a class="term" href="options.xhtml#opt-services.himalaya-watch.settings.account"><code class="option">services.himalaya-watch.settings.account</code>
-  </a>
- </span>
-</dt>
-<dd>
-<p>Name of the account the watcher should be started for.
-If no account is given, the default one is used.</p>
-
-<p><span class="emphasis"><em>Type:</em></span>
-null or string</p>
-
-<p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">null</code></p>
-
-<p><span class="emphasis"><em>Example:</em></span>
-<code class="literal">&quot;personal&quot;</code></p>
-
-<p><span class="emphasis"><em>Declared by:</em></span></p>
-<table border="0" summary="Simple list" class="simplelist">
-<tr><td>
-<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/himalaya.nix" target="_top">
-&lt;home-manager/modules/programs/himalaya.nix&gt;
 </a></code>
 </td></tr>
 </table>
@@ -67673,7 +69336,7 @@ boolean</p>
 package</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
-<code class="literal">&lt;derivation kdeconnect-kde-24.12.1&gt;</code></p>
+<code class="literal">&lt;derivation kdeconnect-kde-24.12.2&gt;</code></p>
 
 <p><span class="emphasis"><em>Example:</em></span>
 <code class="literal">pkgs.plasma5Packages.kdeconnect-kde</code></p>
@@ -67788,6 +69451,312 @@ boolean</p>
 <tr><td>
 <code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/lieer.nix" target="_top">
 &lt;home-manager/modules/services/lieer.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.linux-wallpaperengine.enable"></a><a class="term" href="options.xhtml#opt-services.linux-wallpaperengine.enable"><code class="option">services.linux-wallpaperengine.enable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable linux-wallpaperengine, an implementation of Wallpaper Engine functionality.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/linux-wallpaperengine.nix" target="_top">
+&lt;home-manager/modules/services/linux-wallpaperengine.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.linux-wallpaperengine.package"></a><a class="term" href="options.xhtml#opt-services.linux-wallpaperengine.package"><code class="option">services.linux-wallpaperengine.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The linux-wallpaperengine package to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.linux-wallpaperengine</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/linux-wallpaperengine.nix" target="_top">
+&lt;home-manager/modules/services/linux-wallpaperengine.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.linux-wallpaperengine.assetsPath"></a><a class="term" href="options.xhtml#opt-services.linux-wallpaperengine.assetsPath"><code class="option">services.linux-wallpaperengine.assetsPath</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Path to the assets directory.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+path</p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/linux-wallpaperengine.nix" target="_top">
+&lt;home-manager/modules/services/linux-wallpaperengine.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.linux-wallpaperengine.clamping"></a><a class="term" href="options.xhtml#opt-services.linux-wallpaperengine.clamping"><code class="option">services.linux-wallpaperengine.clamping</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Clamping mode for all wallpapers.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or one of “clamp”, “border”, “repeat”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/linux-wallpaperengine.nix" target="_top">
+&lt;home-manager/modules/services/linux-wallpaperengine.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.linux-wallpaperengine.wallpapers"></a><a class="term" href="options.xhtml#opt-services.linux-wallpaperengine.wallpapers"><code class="option">services.linux-wallpaperengine.wallpapers</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Define wallpapers.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of (submodule)</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/linux-wallpaperengine.nix" target="_top">
+&lt;home-manager/modules/services/linux-wallpaperengine.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.linux-wallpaperengine.wallpapers._.audio.automute"></a><a class="term" href="options.xhtml#opt-services.linux-wallpaperengine.wallpapers._.audio.automute"><code class="option">services.linux-wallpaperengine.wallpapers.*.audio.automute</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Automute when another app is playing sound.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/linux-wallpaperengine.nix" target="_top">
+&lt;home-manager/modules/services/linux-wallpaperengine.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.linux-wallpaperengine.wallpapers._.audio.processing"></a><a class="term" href="options.xhtml#opt-services.linux-wallpaperengine.wallpapers._.audio.processing"><code class="option">services.linux-wallpaperengine.wallpapers.*.audio.processing</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Enables audio processing for background.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/linux-wallpaperengine.nix" target="_top">
+&lt;home-manager/modules/services/linux-wallpaperengine.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.linux-wallpaperengine.wallpapers._.audio.silent"></a><a class="term" href="options.xhtml#opt-services.linux-wallpaperengine.wallpapers._.audio.silent"><code class="option">services.linux-wallpaperengine.wallpapers.*.audio.silent</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Mutes all sound of the wallpaper.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/linux-wallpaperengine.nix" target="_top">
+&lt;home-manager/modules/services/linux-wallpaperengine.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.linux-wallpaperengine.wallpapers._.extraOptions"></a><a class="term" href="options.xhtml#opt-services.linux-wallpaperengine.wallpapers._.extraOptions"><code class="option">services.linux-wallpaperengine.wallpapers.*.extraOptions</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Extra arguments to pass to the linux-wallpaperengine command for this wallpaper.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/linux-wallpaperengine.nix" target="_top">
+&lt;home-manager/modules/services/linux-wallpaperengine.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.linux-wallpaperengine.wallpapers._.fps"></a><a class="term" href="options.xhtml#opt-services.linux-wallpaperengine.wallpapers._.fps"><code class="option">services.linux-wallpaperengine.wallpapers.*.fps</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Limits the FPS to a given number.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or signed integer</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/linux-wallpaperengine.nix" target="_top">
+&lt;home-manager/modules/services/linux-wallpaperengine.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.linux-wallpaperengine.wallpapers._.monitor"></a><a class="term" href="options.xhtml#opt-services.linux-wallpaperengine.wallpapers._.monitor"><code class="option">services.linux-wallpaperengine.wallpapers.*.monitor</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Which monitor to display the wallpaper.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/linux-wallpaperengine.nix" target="_top">
+&lt;home-manager/modules/services/linux-wallpaperengine.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.linux-wallpaperengine.wallpapers._.scaling"></a><a class="term" href="options.xhtml#opt-services.linux-wallpaperengine.wallpapers._.scaling"><code class="option">services.linux-wallpaperengine.wallpapers.*.scaling</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Scaling mode for this wallpaper.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or one of “stretch”, “fit”, “fill”, “default”</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">null</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/linux-wallpaperengine.nix" target="_top">
+&lt;home-manager/modules/services/linux-wallpaperengine.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.linux-wallpaperengine.wallpapers._.wallpaperId"></a><a class="term" href="options.xhtml#opt-services.linux-wallpaperengine.wallpapers._.wallpaperId"><code class="option">services.linux-wallpaperengine.wallpapers.*.wallpaperId</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Wallpaper ID to be used.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/linux-wallpaperengine.nix" target="_top">
+&lt;home-manager/modules/services/linux-wallpaperengine.nix&gt;
 </a></code>
 </td></tr>
 </table>
@@ -76936,6 +78905,85 @@ string</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-services.tldr-update.enable"></a><a class="term" href="options.xhtml#opt-services.tldr-update.enable"><code class="option">services.tldr-update.enable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Automatic updates for the tldr CLI
+.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/tldr-update.nix" target="_top">
+&lt;home-manager/modules/services/tldr-update.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.tldr-update.package"></a><a class="term" href="options.xhtml#opt-services.tldr-update.package"><code class="option">services.tldr-update.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The tldr package to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.tldr</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">tlrc</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/tldr-update.nix" target="_top">
+&lt;home-manager/modules/services/tldr-update.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.tldr-update.period"></a><a class="term" href="options.xhtml#opt-services.tldr-update.period"><code class="option">services.tldr-update.period</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Systemd timer period to create for scheduled <span class="command"><strong>tldr --update</strong></span>.</p><p>The format is described in <a class="link" href="https://www.freedesktop.org/software/systemd/man/systemd.time.html" target="_top"><span class="citerefentry"><span class="refentrytitle">systemd.time</span>(7)</span></a>.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+string</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">&quot;weekly&quot;</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/tldr-update.nix" target="_top">
+&lt;home-manager/modules/services/tldr-update.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-services.trayer.enable"></a><a class="term" href="options.xhtml#opt-services.trayer.enable"><code class="option">services.trayer.enable</code>
   </a>
  </span>
@@ -80353,6 +82401,57 @@ null or string</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-services.yubikey-agent.enable"></a><a class="term" href="options.xhtml#opt-services.yubikey-agent.enable"><code class="option">services.yubikey-agent.enable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable Seamless ssh-agent for YubiKeys.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/yubikey-agent.nix" target="_top">
+&lt;home-manager/modules/services/yubikey-agent.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-services.yubikey-agent.package"></a><a class="term" href="options.xhtml#opt-services.yubikey-agent.package"><code class="option">services.yubikey-agent.package</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The yubikey-agent package to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.yubikey-agent</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/yubikey-agent.nix" target="_top">
+&lt;home-manager/modules/services/yubikey-agent.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-specialisation"></a><a class="term" href="options.xhtml#opt-specialisation"><code class="option">specialisation</code>
   </a>
  </span>
@@ -82494,10 +84593,10 @@ boolean</p>
  </span>
 </dt>
 <dd>
-<p>The hyprland package to use.</p>
+<p>The hyprland package to use. Set this to null if you use the NixOS module to install Hyprland.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-package</p>
+null or package</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">pkgs.hyprland</code></p>
@@ -82559,10 +84658,35 @@ strings concatenated with “\n”</p>
 <p>The Hyprland package after applying configuration.</p>
 
 <p><span class="emphasis"><em>Type:</em></span>
-package <span class="emphasis"><em>(read only)</em></span></p>
+null or package <span class="emphasis"><em>(read only)</em></span></p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">wayland.windowManager.hyprland.package</code> with applied configuration</p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/window-managers/hyprland.nix" target="_top">
+&lt;home-manager/modules/services/window-managers/hyprland.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-wayland.windowManager.hyprland.finalPortalPackage"></a><a class="term" href="options.xhtml#opt-wayland.windowManager.hyprland.finalPortalPackage"><code class="option">wayland.windowManager.hyprland.finalPortalPackage</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The xdg-desktop-portal-hyprland package after overriding its hyprland input.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or package <span class="emphasis"><em>(read only)</em></span></p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">wayland.windowManager.hyprland.portalPackage</code> with
+<code class="literal">wayland.windowManager.hyprland.finalPackage</code> override</p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -82623,6 +84747,30 @@ list of (package or path)</p>
 
 <p><span class="emphasis"><em>Default:</em></span>
 <code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/services/window-managers/hyprland.nix" target="_top">
+&lt;home-manager/modules/services/window-managers/hyprland.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-wayland.windowManager.hyprland.portalPackage"></a><a class="term" href="options.xhtml#opt-wayland.windowManager.hyprland.portalPackage"><code class="option">wayland.windowManager.hyprland.portalPackage</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>The xdg-desktop-portal-hyprland package to use.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+null or package</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">pkgs.xdg-desktop-portal-hyprland</code></p>
 
 <p><span class="emphasis"><em>Declared by:</em></span></p>
 <table border="0" summary="Simple list" class="simplelist">
@@ -86438,6 +88586,63 @@ boolean</p>
 <tr><td>
 <code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/misc/xdg.nix" target="_top">
 &lt;home-manager/modules/misc/xdg.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-xdg.autostart.enable"></a><a class="term" href="options.xhtml#opt-xdg.autostart.enable"><code class="option">xdg.autostart.enable</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to enable creation of XDG autostart entries.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">false</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span>
+<code class="literal">true</code></p>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/misc/xdg-autostart.nix" target="_top">
+&lt;home-manager/modules/misc/xdg-autostart.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-xdg.autostart.entries"></a><a class="term" href="options.xhtml#opt-xdg.autostart.entries"><code class="option">xdg.autostart.entries</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Paths to desktop files that should be linked to <code class="literal">XDG_CONFIG_HOME/autostart</code></p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of path</p>
+
+<p><span class="emphasis"><em>Default:</em></span>
+<code class="literal">[ ]</code></p>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting">[
+  &quot;${pkgs.evolution}/share/applications/org.gnome.Evolution.desktop&quot;
+]
+
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/misc/xdg-autostart.nix" target="_top">
+&lt;home-manager/modules/misc/xdg-autostart.nix&gt;
 </a></code>
 </td></tr>
 </table>
